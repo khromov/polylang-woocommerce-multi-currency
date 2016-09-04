@@ -3,7 +3,7 @@
 This simple plugin adds support for setting a WooCommerce currency for each Polylang 
 language you are using.
 
-Requires Polylang, WooCommerce and Polylang for WooCommerce
+Requires Polylang, WooCommerce and Polylang for WooCommerce or Hyyan WooCommerce Polylang Integration.
 
 ###### Screenshots
 
