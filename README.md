@@ -3,7 +3,10 @@
 This simple plugin adds support for setting a WooCommerce currency for each Polylang 
 language you are using.
 
-Requires Polylang, WooCommerce and Polylang for WooCommerce
+Requires Polylang, WooCommerce and Polylang for WooCommerce.
+
+This plugin also disables syncing of certain product settings that Polylang for WooCommerce performs (like price and stock management) 
+so that you can set individual pricing, tax class and stock on a per-language basis.
 
 ###### Screenshots
 
