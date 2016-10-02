@@ -19,7 +19,7 @@ add_action('admin_init', 'pll_mc_save_form', 999);
 add_filter('woocommerce_currency', 'pll_mc_woocommerce_currency', 999);
 
 /* Don't sync price / stock-related information in Polylang for WC */
-add_filter('pllwc_copy_post_metas', 'pll_mc_remove_metadata_sync', 10, 4);
+add_filter('pllwc_copy_post_metas', 'pll_mc_remove_metadata_sync', 10, 5);
 
 /**
  * Dynamically filter currency based on language
