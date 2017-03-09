@@ -28,7 +28,11 @@ add_filter('pllwc_copy_post_metas', 'pll_mc_remove_metadata_sync', 10, 5);
  * @return string
  */
 function pll_mc_woocommerce_currency($currency) {
+    global $post;
     $lang = function_exists('pll_current_language') ? pll_current_language() : false;
+    if ( ! $lang && is_a( $post, 'WP_Post' ) && function_exists( 'pll_get_post_language' ) ) {
+        $lang = pll_get_post_language( $post->ID );
+    }
     return $lang ? get_option("pll_mc_{$lang}_currency", $currency) : $currency;
 }
 
