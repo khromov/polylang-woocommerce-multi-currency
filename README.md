@@ -14,5 +14,7 @@ so that you can set individual pricing, tax class and stock on a per-language ba
 
 ###### Known issues
 
+
 * Setting the currency does not work when initially adding a language. Please add 
 the language first, and then edit it to set the currency.
+* This plugin does not handle shipping methods optimally. The workaround is to use a specific shipping method per country and price that in the local currency, or (preferably) to use the [WooCommerce Per Product Shipping plugin](https://woocommerce.com/products/per-product-shipping/) so that you can price shipping on a per-product level (which works nicely with Polylang translations.)
